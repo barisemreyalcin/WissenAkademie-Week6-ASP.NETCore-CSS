@@ -1,0 +1,52 @@
+﻿#stats-score {
+    border: 5px solid #2d347e;
+    width: 100%;
+    background-color: #d9dcfe;
+    font-weight: bold;
+    font-family: Tahoma, 'Agency FB', sans-serif;
+}
+
+    #stats-score th,
+    #stats-score td {
+        padding: 16px;
+    }
+
+    #stats-score th {
+        background-color: #d30101;
+        color: #f5f4f4;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        text-align: left;
+    }
+
+    #stats-score td {
+        color: #2c2b2b
+    }
+
+    #stats-rebound {
+        border: 3px solid;
+        width: 100%;
+        font-family: Calibri;
+    }
+
+        #stats-rebound th,
+        #stats-rebound td {
+            border: 1px solid #8f0d0d;
+            padding: 12px;
+        }
+
+        #stats-rebound th {
+            background-color: #000faa;
+            color: #f5f4f4;
+            text-align: left;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-weight: 500;
+            border: 1px dashed #f5f4f4;
+        }
+
+        #stats-rebound tbody tr:hover {
+            background-color: #d50f0f;
+            color: #f5f4f4;
+            cursor: pointer;
+        }

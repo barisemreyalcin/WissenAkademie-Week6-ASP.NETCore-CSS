@@ -1,0 +1,119 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Agency FB' 'Book Antiqua';
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: #cc4e04;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.brand-logo,
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    color: #fef7f3;
+    padding: 20px 25px;
+    transition: 200ms ease-in-out;
+}
+
+    .brand-logo:hover,
+    .nav-link:hover {
+        background-color: #fd660d
+    }
+
+.brand-logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.desktop-navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+.desktop-item {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+    position: relative;
+    width: 65px;
+    cursor: pointer;
+}
+
+#hamburger-checkbox {
+    display: none;
+}
+
+.bar {
+    position: absolute;
+    height: 2px;
+    background-color: #fef7f3;
+    border-radius: 2px;
+    left: 15px;
+    right: 15px;
+    top: calc(50% - 2px);
+}
+
+    .bar:nth-child(2) {
+        top: calc(50% - 12px);
+    }
+
+    .bar:nth-child(3) {
+        top: calc(50% + 8px);
+    }
+
+.mobile-navbar {
+    background-color: #fef7f3;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    transition: 200ms ease-in-out;
+}
+
+.mobile-link {
+    text-decoration: none;
+    color: #cc4e04;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    transition: 200ms ease-in-out;
+}
+
+    .mobile-link:hover {
+        background-color: #fd660d;
+        color: #fef7f3;
+    }
+
+@media(max-width: 728px) {
+    .desktop-navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-navbar{
+        display: block;
+        transform: translateX(100%);
+    }
+
+    #hamburger-checkbox:checked + .mobile-navbar {
+        transform: translateX(0);
+    }
+}
